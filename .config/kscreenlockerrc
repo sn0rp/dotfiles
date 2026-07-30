@@ -1,0 +1,8 @@
+[Greeter]
+WallpaperPlugin=org.kde.color
+
+[Greeter][LnF][General]
+alwaysShowClock=false
+
+[Greeter][Wallpaper][org.kde.color][General]
+Color=49,49,49
