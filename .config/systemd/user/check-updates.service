@@ -1,0 +1,6 @@
+[Unit]
+Description=Check for available package updates
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/check-updates.sh

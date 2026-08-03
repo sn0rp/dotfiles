@@ -1,0 +1,10 @@
+[Unit]
+Description=Check for package updates twice monthly
+
+[Timer]
+OnCalendar=*-*-01,15 10:00
+Persistent=true
+RandomizedDelaySec=6h
+
+[Install]
+WantedBy=timers.target
