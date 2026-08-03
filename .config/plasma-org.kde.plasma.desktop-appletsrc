@@ -4,25 +4,6 @@ RightButton;NoModifier=org.kde.contextmenu
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
-[Containments][1]
-ItemGeometries-1920x1200=
-ItemGeometriesHorizontal=
-activityId=b80c60a0-b20a-47a7-aa84-4834bd73135d
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][1][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][1][Wallpaper][org.kde.image][General]
-Image=file:///home/snorp/Pictures/black_hole.jpg
-SlidePaths=/usr/share/wallpapers/
-
 [Containments][2]
 activityId=
 formfactor=2
@@ -154,11 +135,26 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][2][Applets][7][General]
-extraItems=org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.brightness,org.kde.plasma.manage-inputmethod,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.kscreen
-knownItems=org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.weather,org.kde.plasma.bluetooth,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.brightness,org.kde.plasma.manage-inputmethod,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.kscreen
+extraItems=org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.bluetooth,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.brightness,org.kde.plasma.manage-inputmethod,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.kscreen
+knownItems=org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.mediacontroller,org.kde.plasma.battery,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.weather,org.kde.plasma.bluetooth,org.kde.plasma.keyboardlayout,org.kde.plasma.printmanager,org.kde.plasma.keyboardindicator,org.kde.plasma.brightness,org.kde.plasma.manage-inputmethod,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.kscreen
 
 [Containments][2][General]
 AppletOrder=3;4;5;6;7;21
+
+[Containments][22]
+ItemGeometries-1920x1200=
+ItemGeometriesHorizontal=
+activityId=4dc9386d-b340-49a1-afae-13dc2c874960
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][22][Wallpaper][org.kde.image][General]
+Image=file:///home/snorp/Pictures/black_hole.jpg
+SlidePaths=/usr/share/wallpapers/
 
 [ScreenMapping]
 itemsOnDisabledScreens=
