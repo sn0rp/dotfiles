@@ -102,3 +102,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export PATH="$HOME/.local/bin:$PATH"
+[ -f "$HOME/.local/lib/gitpush.sh" ] && source "$HOME/.local/lib/gitpush.sh"
