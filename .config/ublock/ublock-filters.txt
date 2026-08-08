@@ -1,0 +1,94 @@
+! Nov 26, 2025 https://bambulab.com
+bambulab.com##.trustarc-banner-content
+ 
+! Dec 1, 2025 https://www.twitch.tv
+www.twitch.tv##.iobpzz.Layout-sc-1xcs6mc-0
+ 
+! Dec 8, 2025 https://www.youtube.com
+www.youtube.com##.ytShoppingTimelyShelfContentViewModelIsVisible.ytShoppingTimelyShelfContentViewModelHost
+www.youtube.com##ytd-guide-entry-renderer:has-text(Shorts)
+www.youtube.com##ytd-guide-entry-renderer:has-text(Home)
+ 
+! Dec 11, 2025 https://www.youtube.com
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(4)
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(5)
+www.youtube.com###copyright
+www.youtube.com##.ytd-rich-grid-renderer.style-scope > .ytd-feed-filter-chip-bar-renderer.style-scope
+www.youtube.com###header > .ytd-rich-grid-renderer.style-scope
+www.youtube.com##ytd-guide-section-renderer.ytd-guide-renderer.style-scope:nth-of-type(1)
+www.youtube.com###scroll-container > .yt-chip-cloud-renderer.style-scope
+ 
+! Dec 12, 2025 https://www.twitch.tv
+www.twitch.tv##.gEvECC.Layout-sc-1xcs6mc-0
+www.twitch.tv##.gWaIYG.Layout-sc-1xcs6mc-0
+www.twitch.tv##.gmbpwB.Layout-sc-1xcs6mc-0 > .fHdBNk.Layout-sc-1xcs6mc-0
+ 
+! Jan 8, 2026 https://www.twitch.tv
+www.twitch.tv##.csjPxT.celebration__overlay.InjectLayout-sc-1i43xsx-0
+www.twitch.tv##.skip-to-dropdown.kvrzxX.Layout-sc-1xcs6mc-0
+ 
+! Jan 17, 2026 https://www.armoredturtle.xyz
+www.armoredturtle.xyz##.md-consent__overlay
+www.armoredturtle.xyz##.md-consent__inner
+ 
+! Jan 23, 2026 https://www.ups.com
+www.ups.com##.ot-fade-in.onetrust-pc-dark-filter
+www.ups.com###onetrust-group-container
+www.ups.com##.has-reject-all-button.ot-sdk-columns.ot-sdk-twelve
+ 
+! Feb 24, 2026 https://www.youtube.com
+www.youtube.com##.ytd-info-panel-container-renderer.style-scope.header
+www.youtube.com##.ytd-info-panel-content-renderer.style-scope.content
+www.youtube.com##ytd-rich-section-renderer:has(#title:has-text(Most relevant))
+ 
+! Mar 10, 2026 https://chatgpt.com
+||accounts.google.com/gsi/iframe/select$subdocument,third-party
+ 
+! Mar 10, 2026 https://protocol.bryanjohnson.com
+||d3k81ch9hvuctc.cloudfront.net/company/UDtiqU/images/820076d1-bd72-47e7-ab34-951f1d7676ff.png$image
+||d3k81ch9hvuctc.cloudfront.net/company/UDtiqU/images/820076d1-bd72-47e7-ab34-951f1d7676ff.png$image
+protocol.bryanjohnson.com##body > div > .kl-private-reset-css-Xuajs1.needsclick > div.kl-private-reset-css-Xuajs1.needsclick > .kl-private-reset-css-Xuajs1.needsclick > .kl-private-reset-css-Xuajs1.needsclick
+protocol.bryanjohnson.com##body > div > .kl-private-reset-css-Xuajs1.needsclick > div.kl-private-reset-css-Xuajs1.needsclick > .kl-private-reset-css-Xuajs1.needsclick
+protocol.bryanjohnson.com##body > div > .kl-private-reset-css-Xuajs1.needsclick > div.kl-private-reset-css-Xuajs1.needsclick
+ 
+! Mar 11, 2026 https://www.washingtonexaminer.com
+||accounts.google.com/gsi/iframe/select?client_id=631840175966-t7oedl3k5h0much3s33f7lq7bg4b231q.apps.googleusercontent.com&ux_mode=popup&ui_mode=card&as=MO2hicH3sv87XSsn8ckjMp3gGArFBEqPxiwCzFhlhzk&bs=CbIQTa4chEmFpsZSNZBBEV2UBvxfFa4ie9dEz2w3Ftw&is_itp=true&channel_id=dcfc486e4e34cd795a0ec5789926067cf9caa2733ea560b563a954c2fdd80718&origin=https%3A%2F%2Fwww.washingtonexaminer.com&oauth2_auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth$subdocument
+www.washingtonexaminer.com##.onesignal-slidedown-dialog
+||accounts.google.com/gsi/iframe/select?client_id=631840175966-t7oedl3k5h0much3s33f7lq7bg4b231q.apps.googleusercontent.com&ux_mode=popup&ui_mode=card&as=MO2hicH3sv87XSsn8ckjMp3gGArFBEqPxiwCzFhlhzk&bs=CbIQTa4chEmFpsZSNZBBEV2UBvxfFa4ie9dEz2w3Ftw&is_itp=true&channel_id=dcfc486e4e34cd795a0ec5789926067cf9caa2733ea560b563a954c2fdd80718&origin=https%3A%2F%2Fwww.washingtonexaminer.com&oauth2_auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth$subdocument
+ 
+! Mar 16, 2026 https://www.reddit.com
+||accounts.google.com/gsi/iframe/select?client_id=705819728788-b2c1kcs7tst3b7ghv7at0hkqmtc68ckl.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=card&as=pTWBGW52PzDxnfX8PoCmK_knDuB-4355lSCCL9YorXI&bs=ATmvAU47EkLNZgw%2Bvu4AJBkhJJ9OkZ5QEierrjzX0ac&is_itp=true&channel_id=c0ded77f775b7aa81b92558048d50709525b003cf5564cab31bb110b2ddeb5a8&origin=https%3A%2F%2Fwww.reddit.com&oauth2_auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth$subdocument
+||accounts.google.com/gsi/iframe/select?client_id=705819728788-b2c1kcs7tst3b7ghv7at0hkqmtc68ckl.apps.googleusercontent.com&auto_select=true&ux_mode=popup&ui_mode=card&as=FgoE9viewfL3G5foIg13D35JXMMIHc8v6kwervnNhYs&bs=ATmvAU47EkLNZgw%2Bvu4AJBkhJJ9OkZ5QEierrjzX0ac&is_itp=true&channel_id=9eb0c28f4265f1bfbf6aa503f63b6bfd83dc15e1946a6a56716bc2468bb1d6ed&origin=https%3A%2F%2Fwww.reddit.com&oauth2_auth_url=https%3A%2F%2Faccounts.google.com%2Fo%2Foauth2%2Fv2%2Fauth$subdocument
+ 
+! Apr 9, 2026 https://spectrumfilaments.com
+spectrumfilaments.com##.cc--anim.cm-wrapper
+ 
+! Apr 20, 2026 https://speedof.me
+speedof.me##.cc-consent-toast
+ 
+! Apr 25, 2026 https://build.nvidia.com
+build.nvidia.com##.has-reject-all-button.ot-sdk-columns.ot-sdk-twelve
+build.nvidia.com###onetrust-group-container
+build.nvidia.com##.ot-fade-in.onetrust-pc-dark-filter
+ 
+! Apr 25, 2026 https://www.steelcase.com
+www.steelcase.com###onetrust-group-container
+www.steelcase.com##.has-reject-all-button.ot-sdk-columns.ot-sdk-twelve
+www.steelcase.com##.ot-fade-in.onetrust-pc-dark-filter
+ 
+! May 3, 2026 https://www.3ds.com
+www.3ds.com##.tc-privacy-footer.tc-privacy-bar.tc-privacy-banner.tc-reset-css
+ 
+! May 7, 2026 https://netbird.io
+netbird.io##.bg-nb-gray\/60.z-20.py-0.md\:px-10.px-4.justify-center.items-center.flex.right-0.bottom-0.h-full.w-full.fixed
+ 
+! Jun 5, 2026 https://www.skyatnightmagazine.com
+||cdn.privacy-mgmt.com/index.html?hasCsp=true&message_id=1276452&consentUUID=null&consent_origin=https%3A%2F%2Fcdn.privacy-mgmt.com%2Fconsent%2Ftcfv2&preload_message=true&version=v1$subdocument
+||cdn.privacy-mgmt.com/index.html?hasCsp=true&message_id=1276452&consentUUID=null&consent_origin=https%3A%2F%2Fcdn.privacy-mgmt.com%2Fconsent%2Ftcfv2&preload_message=true&version=v1$subdocument
+||cdn.privacy-mgmt.com/index.html?hasCsp=true&message_id=1276452&consentUUID=null&consent_origin=https%3A%2F%2Fcdn.privacy-mgmt.com%2Fconsent%2Ftcfv2&preload_message=true&version=v1$subdocument
+ 
+! Jun 10, 2026 https://getemoji.com
+getemoji.com##.didomi-popup__backdrop.didomi-notice-popup.didomi-popup-backdrop
+ 
+! Jun 20, 2026 https://directory.fsf.org
+||static.fsf.org/nosvn/banners/202606fundraiser/$subdocument
