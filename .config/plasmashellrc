@@ -1,5 +1,9 @@
 [PlasmaViews][Panel 2]
+alignment=132
 floating=0
+floatingApplets=0
+panelLengthMode=0
+panelOpacity=0
 shell=org.kde.plasma.desktop
 
 [PlasmaViews][Panel 2][Defaults]
