@@ -10,10 +10,6 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="catppuccin"
 CATPPUCCIN_FLAVOR="macchiato"
-ZSH_THEME_GIT_PROMPT_CLEAN=""
-ZSH_THEME_GIT_PROMPT_DIRTY=""
-
-export GIT_CEILING_DIRECTORIES="$HOME"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -79,6 +75,10 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+ZSH_THEME_GIT_PROMPT_CLEAN=""
+ZSH_THEME_GIT_PROMPT_DIRTY=""
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%} "
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -107,6 +107,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export GIT_CEILING_DIRECTORIES="$HOME"
 
 export PATH="$HOME/.local/bin:$PATH"
 [ -f "$HOME/.local/lib/gitpush.sh" ] && source "$HOME/.local/lib/gitpush.sh"
