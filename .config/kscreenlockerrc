@@ -1,11 +1,12 @@
 [Daemon]
 Timeout=15
 
-[Greeter]
-WallpaperPlugin=org.kde.color
-
 [Greeter][LnF][General]
 alwaysShowClock=false
 
 [Greeter][Wallpaper][org.kde.color][General]
 Color=49,49,49
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///home/snorp/Pictures/black_hole.jpg
+PreviewImage=file:///home/snorp/Pictures/black_hole.jpg
