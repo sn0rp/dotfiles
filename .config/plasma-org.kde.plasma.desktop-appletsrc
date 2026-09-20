@@ -71,8 +71,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
-popupHeight=521
-popupWidth=659
+popupHeight=543
+popupWidth=675
 
 [Containments][2][Applets][3][Configuration][ConfigDialog]
 DialogHeight=630
@@ -94,7 +94,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:librewolf.desktop,applications:org.kde.dolphin.desktop,file:///usr/share/applications/libreoffice-writer.desktop,file:///usr/share/applications/libreoffice-calc.desktop,applications:com.mitchellh.ghostty.desktop,applications:dev.zed.Zed.desktop,applications:org.freecad.FreeCAD.desktop,applications:orca-slicer.desktop,applications:gimp.desktop,applications:org.inkscape.Inkscape.desktop,applications:org.qbittorrent.qBittorrent.desktop,applications:signal.desktop,applications:systemsettings.desktop
+launchers=applications:librewolf.desktop,applications:org.kde.dolphin.desktop,file:///usr/share/applications/libreoffice-writer.desktop,file:///usr/share/applications/libreoffice-calc.desktop,applications:com.mitchellh.ghostty.desktop,applications:dev.zed.Zed.desktop,applications:org.freecad.FreeCAD.desktop,applications:orca-slicer.desktop,applications:gimp.desktop,applications:org.qbittorrent.qBittorrent.desktop,applications:systemsettings.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -200,7 +200,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][22][Wallpaper][org.kde.image][General]
-Image=file:///home/snorp/Pictures/black_hole.jpg
+Image=file:///home/snorp/.local/share/wallpapers/Sky Blossom/
 SlidePaths=/usr/share/wallpapers/
 
 [ScreenMapping]
