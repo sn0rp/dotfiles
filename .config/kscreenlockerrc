@@ -8,5 +8,5 @@ alwaysShowClock=false
 Color=49,49,49
 
 [Greeter][Wallpaper][org.kde.image][General]
-Image=file:///home/snorp/Pictures/black_hole.jpg
-PreviewImage=file:///home/snorp/Pictures/black_hole.jpg
+Image=file:///home/snorp/.local/share/wallpapers/Sky Blossom/
+PreviewImage=file:///home/snorp/.local/share/wallpapers/Sky Blossom/
