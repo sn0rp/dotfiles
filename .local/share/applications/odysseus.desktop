@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=Odysseus
+Comment=Local AI, served only while this window is open
+Exec=/bin/sh -c 'exec "$HOME/.local/bin/odysseus"'
+Icon=odysseus
+StartupWMClass=odysseus
+StartupNotify=true
+Terminal=false
+Categories=Network;Utility;
+Keywords=AI;LLM;chat;

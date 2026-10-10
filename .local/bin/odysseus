@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+# Odysseus in its own window: starts the server on open, stops it on close.
+import glob, subprocess, sys, urllib.request, urllib.error
+from pathlib import Path
+from PyQt6.QtCore import QUrl, QTimer
+from PyQt6.QtGui import QDesktopServices
+from PyQt6.QtWidgets import QApplication
+from PyQt6.QtWebEngineCore import QWebEnginePage, QWebEngineProfile, QWebEngineSettings
+from PyQt6.QtWebEngineWidgets import QWebEngineView
+
+DIR = Path.home() / "odysseus"
+# Use the same port docker compose publishes (APP_PORT in .env, default 7000).
+port = "7000"
+for line in (DIR / ".env").read_text().splitlines():
+    if line.strip().startswith("APP_PORT="):
+        port = line.split("=", 1)[1].split("#")[0].strip().strip("\"'") or port
+URL = f"http://127.0.0.1:{port}/"
+
+# Local model served by llama.cpp on the iGPU. Odysseus reaches it at
+# http://host.docker.internal:8081/v1 (the Docker bridge, not your network).
+MODEL = glob.glob(str(DIR / "data/models/Qwen3.6-35B-A3B-UD-Q4_K_M.gguf"))
+LLAMA = ["llama-server", "--alias", "qwen3.6-35b-a3b",
+         "--host", "172.17.0.1", "--port", "8081",
+         "-ngl", "99", "-c", "32768", "-fa", "on", "--jinja",
+         "-np", "1", "--cache-reuse", "256",   # one slot keeps Odysseus's long prompt cached
+         "-b", "2048", "-ub", "2048"]          # read prompts in bigger chunks
+LOG = Path.home() / ".cache/odysseus-llama-server.log"
+llama = None
+
+class Page(QWebEnginePage):
+    # Odysseus stays in the window; any other link opens in your default browser.
+    def acceptNavigationRequest(self, url, nav_type, main_frame):
+        if main_frame and url.scheme().startswith("http") and url.host() not in ("127.0.0.1", "localhost"):
+            QDesktopServices.openUrl(url)
+            return False
+        return True
+    def createWindow(self, _type):  # links that open a new tab
+        return Page(self.profile(), self)
+
+# Was Docker already running (for something else) before we started Odysseus?
+docker_was_running = subprocess.run(
+    ["systemctl", "is-active", "--quiet", "docker.service"]).returncode == 0
+subprocess.Popen(["docker", "compose", "up", "-d", "odysseus"], cwd=DIR)  # no ntfy
+
+app = QApplication(sys.argv)
+app.setDesktopFileName("odysseus")
+profile = QWebEngineProfile("odysseus", app)  # named = saved to disk
+profile.setPersistentCookiesPolicy(QWebEngineProfile.PersistentCookiesPolicy.ForcePersistentCookies)
+profile.settings().setAttribute(QWebEngineSettings.WebAttribute.JavascriptCanAccessClipboard, True)
+profile.downloadRequested.connect(
+    lambda d: (d.setDownloadDirectory(str(Path.home() / "Downloads")), d.accept()))
+
+view = QWebEngineView()
+view.setPage(Page(profile, view))
+view.setWindowTitle("Odysseus")
+view.setHtml("<body style='background:#282c34;color:#ccc;font:20px sans-serif'><p>Starting Odysseus…</p>")
+view.resize(1300, 850)
+view.show()
+
+def start_llama():
+    # Start the model as soon as Docker's bridge (172.17.0.1) exists, so it is
+    # loaded before Odysseus first asks for it.
+    global llama
+    if not MODEL or llama is not None:
+        return
+    if not Path("/sys/class/net/docker0").exists():
+        return QTimer.singleShot(1000, start_llama)
+    LOG.parent.mkdir(parents=True, exist_ok=True)
+    llama = subprocess.Popen(LLAMA + ["-m", MODEL[0]], stdout=open(LOG, "w"),
+                             stderr=subprocess.STDOUT)
+
+def load_when_ready():
+    try:
+        urllib.request.urlopen(URL, timeout=3)
+    except urllib.error.HTTPError:
+        pass  # server answered (e.g. login redirect), so it's up
+    except Exception as e:  # not up yet: say why, try again
+        print(f"waiting for {URL}: {e!r}", file=sys.stderr)
+        return QTimer.singleShot(1000, load_when_ready)
+    print(f"Odysseus answered, loading {URL}", file=sys.stderr)
+    view.load(QUrl(URL))
+
+start_llama()
+load_when_ready()
+code = app.exec()
+if llama:
+    llama.terminate()
+    try:
+        llama.wait(timeout=10)
+    except subprocess.TimeoutExpired:
+        llama.kill()
+subprocess.run(["docker", "compose", "stop"], cwd=DIR)
+# Stop Docker only if Odysseus started it and nothing else is running in it.
+if not docker_was_running:
+    others = subprocess.run(["docker", "ps", "-q"], capture_output=True, text=True).stdout.strip()
+    if not others:
+        subprocess.run(["sudo", "-n", "systemctl", "stop", "docker.service"])
+sys.exit(code)
