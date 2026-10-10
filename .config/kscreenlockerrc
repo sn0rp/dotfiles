@@ -1,5 +1,6 @@
 [Daemon]
-Timeout=15
+Autolock=false
+Timeout=0
 
 [Greeter][LnF][General]
 alwaysShowClock=false
@@ -8,5 +9,5 @@ alwaysShowClock=false
 Color=49,49,49
 
 [Greeter][Wallpaper][org.kde.image][General]
-Image=file:///home/snorp/.local/share/wallpapers/Sky Blossom/
-PreviewImage=file:///home/snorp/.local/share/wallpapers/Sky Blossom/
+Image=file:///home/snorp/Pictures/upstate-fall.jpg
+PreviewImage=file:///home/snorp/Pictures/upstate-fall.jpg

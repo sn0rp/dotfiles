@@ -18,7 +18,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][21][Configuration]
-popupHeight=400
+popupHeight=451
 popupWidth=560
 
 [Containments][2][Applets][21][Configuration][Appearance]
@@ -29,7 +29,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
-popupHeight=543
+popupHeight=533
 popupWidth=675
 
 [Containments][2][Applets][3][Configuration][ConfigDialog]
@@ -52,7 +52,7 @@ immutability=1
 plugin=org.kde.plasma.icontasks
 
 [Containments][2][Applets][5][Configuration][General]
-launchers=applications:librewolf.desktop,applications:org.kde.dolphin.desktop,file:///usr/share/applications/libreoffice-writer.desktop,file:///usr/share/applications/libreoffice-calc.desktop,applications:com.mitchellh.ghostty.desktop,applications:dev.zed.Zed.desktop,applications:org.freecad.FreeCAD.desktop,applications:orca-slicer.desktop,applications:gimp.desktop,applications:org.qbittorrent.qBittorrent.desktop,applications:systemsettings.desktop
+launchers=applications:librewolf.desktop,applications:org.kde.dolphin.desktop,file:///usr/share/applications/libreoffice-writer.desktop,file:///usr/share/applications/libreoffice-calc.desktop,applications:com.mitchellh.ghostty.desktop,applications:dev.zed.Zed.desktop,applications:org.freecad.FreeCAD.desktop,applications:orca-slicer.desktop,applications:gimp.desktop,applications:org.qbittorrent.qBittorrent.desktop,applications:discord.desktop,applications:systemsettings.desktop,applications:odysseus.desktop,applications:actual.desktop
 
 [Containments][2][Applets][6]
 immutability=1
@@ -124,6 +124,10 @@ showPercentage=true
 immutability=1
 plugin=org.kde.plasma.brightness
 
+[Containments][2][Applets][7][Applets][26]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
 [Containments][2][Applets][7][Applets][8]
 immutability=1
 plugin=org.kde.plasma.vault
@@ -147,7 +151,9 @@ knownItems=org.kde.plasma.vault,org.kde.plasma.volume,org.kde.plasma.mediacontro
 AppletOrder=3;4;5;6;7;21
 
 [Containments][22]
+ItemGeometries-1694x1129=
 ItemGeometries-1920x1200=
+ItemGeometries-2133x1422=
 ItemGeometriesHorizontal=
 activityId=4dc9386d-b340-49a1-afae-13dc2c874960
 formfactor=0
@@ -158,7 +164,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][22][Wallpaper][org.kde.image][General]
-Image=file:///home/snorp/.local/share/wallpapers/Sky Blossom/
+Image=file:///home/snorp/Pictures/upstate-fall.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [ScreenMapping]
