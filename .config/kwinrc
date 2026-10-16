@@ -24,3 +24,4 @@ Scale=1.5
 
 [org.kde.kdecoration2]
 library=org.kde.kwin.aurorae.v2
+theme=__aurorae__svg__Scratchy

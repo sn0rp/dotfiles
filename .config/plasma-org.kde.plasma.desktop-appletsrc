@@ -18,7 +18,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][2][Applets][21][Configuration]
-popupHeight=451
+popupHeight=449
 popupWidth=560
 
 [Containments][2][Applets][21][Configuration][Appearance]
@@ -29,7 +29,7 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][2][Applets][3][Configuration]
-popupHeight=533
+popupHeight=529
 popupWidth=675
 
 [Containments][2][Applets][3][Configuration][ConfigDialog]
